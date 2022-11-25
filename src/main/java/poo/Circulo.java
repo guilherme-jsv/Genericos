@@ -8,9 +8,9 @@ public class Circulo {
     private double x;
     private double y;
     private double r;
-    private int cor;
+    private Cores cor;
 
-    public Circulo(double x, double y, double r, int cor) {
+    public Circulo(double x, double y, double r, Cores cor) {
         this.x = x;
         this.y = y;
         this.r = r;
@@ -35,7 +35,8 @@ public class Circulo {
     }
 
     public void desenhar(Draw d){
-        d.filledCircle(x,y,r);
+        d.setPenColor(cor.codigocor);
+        d.filledCircle(this.x,this.y,this.r);
     }
 
 }

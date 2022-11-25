@@ -16,7 +16,7 @@ public class Principal implements DrawListener {
     }
 
     public void desenharTela(){
-        Circulo c = new Circulo(400, 400, 100, Circulo.AZUL);
+        Circulo c = new Circulo(400, 400, 100, Cores.AZUL);
         this.desenho.clear();
         c.desenhar(this.desenho);
         this.desenho.show();
@@ -29,7 +29,7 @@ public class Principal implements DrawListener {
 
     @Override
     public void mousePressed(double v, double v1) {
-        Circulo c = new Circulo(v, v1, 100, Circulo.AZUL);
+        Circulo c = new Circulo(v, v1, 100, Cores.AZUL);
         c.desenhar(desenho);
         this.desenho.show();
     }
